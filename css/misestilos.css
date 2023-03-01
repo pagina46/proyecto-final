@@ -1,0 +1,332 @@
+/**-------GENERAL-----------------------------*/
+
+*{
+    font-family: 'Roboto Flex', sans-serif;
+    color: rgba(3, 31, 49, 0.616);
+    font-size:15px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    
+}
+
+
+p{
+    padding: 5px;
+    text-align: justify;
+
+}
+ body{
+    background-color: rgb(17, 17, 24);
+ }
+
+.contenedor{
+    display: flex;
+    margin: 10px; 
+   
+}
+
+h1{
+    font-size:45px;
+    padding: 5px;
+}
+
+h2{ font-size:28px; 
+    padding: 5px;
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+
+h3{ font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+ }
+
+
+h4{ font-size: 18px;
+    padding:10px;
+    margin: 15px;
+   }
+
+.boton {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    color: black;
+    display:block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+    margin:15px;
+    font-size: 12px;
+    text-decoration:none;
+    box-shadow: 0px 4px wheat;
+    border: 0;
+    
+       
+}
+.boton:hover{
+    background-color:  rgba(88, 172, 95, 0.774);
+}
+
+
+/** -------------aside------------------------------ */
+
+aside{ 
+    background-color: rgba(174, 185, 201, 0.705);
+    padding: 35px 15px 30px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width:25%; 
+    display:block;
+    
+
+}
+aside h3{
+    color: black;
+    margin-bottom: 25px;
+}
+aside p {
+    color: white;
+}
+
+#perfil img{
+    width: 100%;
+    height: auto;
+    border-radius:50%;
+    border: 2px white solid;
+    transform:none; 
+      
+}
+
+
+.lista li {
+    list-style-type: none;
+    font-size: 15px;
+    line-height: 1.2rem;
+    margin: 10px;
+       
+
+}
+aside   ul li{
+    display:flex;
+    color: white;
+    
+
+        
+}
+
+
+.redes{
+    max-width: 20%;
+    margin-top: 30px;
+    display: block;
+    position:absolute;
+    box-shadow: 0 3px white;
+    background-color:rgb(227, 237, 240);
+    
+       
+}
+
+.textospan{
+
+    margin-left: 10px;
+    font-size:15px; 
+    position: absolute;
+   
+}
+
+
+.icon i{
+
+    display:block;
+    height: 15px;
+    margin: 15px; 
+
+}
+
+
+/**----------------Publicaciones y videos------------------------*/
+
+.fotos{
+    
+    width: 70%;
+    margin: 50px auto 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 50px;    
+
+
+}
+.fotos img {
+    width: 45%;
+    transition: 1s;
+    cursor: pointer;
+    margin: 30px;
+   
+    border: 5px solid rgba(17, 17, 173, 0.233);
+
+        
+}
+.fotos img:hover{
+    
+    transform: scale(1.2);
+   
+}
+
+.ful-img{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+
+}
+.ful-img img{
+    width: 25%;
+    height: 70%;
+    
+}
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: wheat;
+    cursor: pointer;
+} 
+iframe{
+    width: 350px;
+    height:300px ;
+    margin: 40px;
+
+    
+}
+/**---------------------------Contacto----------------------*/
+
+.formulario  {
+    line-height: 1,5rem;
+    margin: 10px;
+    width: 80%;
+   
+}
+ input{
+    line-height: 1,5rem;
+    margin: 10px;
+    width: 80%;
+}
+
+
+/**------------------main-------------------------------------*/
+
+main {
+    background-color:rgb(255, 255, 249);
+    padding:30px;
+    width: 80%;
+    margin-bottom: 10px;
+
+}
+
+
+#presentacion {
+    
+    height: 200px;
+    width: 90%;
+    background-color: rgb(72, 122, 134);
+    margin:10px 20px 20px 10px;
+    padding: 20px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: aliceblue;
+    display:inline-block;
+    border-style: outset ;
+
+}
+#presentacion h1, #presentacion h2{
+    color: white;
+}
+
+
+.experiencia{
+    
+    margin:15px;
+    padding: 5px;
+    width:90%;
+    position: relative;
+    display: block;
+    background-color: rgb(241, 241, 238);
+    text-align: left;
+    line-height: 1.5rem;
+   
+}
+
+.experiencia ul{
+    padding-left: 30px;
+}
+
+
+
+
+@media screen and (min-width: 750px) and (max-width: 950px){
+    .contenedor{
+        width: 100%;
+        
+    }
+
+     h1,h2{ 
+        font-size: 18px;
+     }
+     aside{
+        width: 200px;
+     }
+     .redes{
+        width: 15%;
+     }
+  
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+    .contenedor{
+        width: 100%;
+        
+
+    }
+    h1,h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size:10px;
+    }
+    
+   
+}
+
+@media screen and (min-width: 250px) and (max-width: 500px){
+    .contenedor{
+        width: 100%;
+        
+
+    }
+    h1,h2,h3,h4{
+        font-size: 12px;
+   
+    }
+    p,li{
+        font-size: 10px;
+    }
+  
+}
+

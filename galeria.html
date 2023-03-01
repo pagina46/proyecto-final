@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicaciones</title>
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="experiencia">
+
+        <h2>Mis publicaciones</h2>
+        <div class="ful-img" id="fulimgbox">
+            <img src="galeria de imagenes/img1.jpg" id="fulimg" alt="">
+            <span onclick="closeimg()">x</span>
+        </div>
+
+
+        <div class="fotos">
+            <img src="galeria de imagenes/img1.jpg" onclick="openfulimg(this.src)" alt="">
+            <img src="galeria de imagenes/img2.jpg" onclick="openfulimg(this.src)" alt="">
+            <img src="galeria de imagenes/img3.jpg" onclick="openfulimg(this.src)"
+                alt="No se cargó correctamente la imagen">
+            <img src="galeria de imagenes/img4.jpg" onclick="openfulimg(this.src)"
+                alt="No se cargó correctamente la imagen">
+
+            <img src="galeria de imagenes/img5.jpg" onclick="openfulimg(this.src)"
+                alt="No se cargó correctamente la imagen">
+
+            <img src="galeria de imagenes/img6.jpg" onclick="openfulimg(this.src)"
+                alt="No se cargó correctamente la imagen">
+
+        </div>
+
+    </div>
+
+     <script src="js/funciongaleria.js"></script>
+</body>
+
+</html>
